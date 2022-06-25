@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sentiment Analysis</title>
     <link rel="stylesheet" href="./assets/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="customer-response">
@@ -21,7 +23,7 @@
           <label for="comment_author" class="required">Your name</label>
 
 
-          <input type="text" name = "coment_author" id="comment_author" value=""  tabindex="1" required="required">
+          <input type="text" name = "name" id="comment_author" value=""  tabindex="1" required="required">
 
           <label for="email" class="required">Your email;</label>
 
@@ -31,15 +33,19 @@
 
           <textarea name="comment" id="comment" rows="10" tabindex="4"  required="required"></textarea>
 
-          <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID"/>
-
           <input name="submit" type="submit" id="submit-button" value="Submit Comment"/>
       </form>
     </div>
     </div>
+
+    <div class="results">
+    </div>
   </div>
 
 
-<script src="./src/index.js"></script>    
+  <button class="get">GET</button>
+  <button class="post">POST</button>
+
+<script  type="module" src="./src/index.js"></script>    
 </body>
 </html>
