@@ -18,6 +18,9 @@ inputForm.addEventListener('submit',(e)=>{
 }
 document.addEventListener('DOMContentLoaded', init)
 
+const json = fs.readFileSync("../index.json");
+const data = JSON.parse(json);
+
 
 function tokenize(text){
     return text 
@@ -29,3 +32,8 @@ function tokenize(text){
 function deleteUselessChars(word){
     return word.replace(/[^a-zA-Z\s]+/g, '');
 }
+
+function rateWord(word){
+    return (word in data) ? data[word]:0
+}
+
