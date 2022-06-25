@@ -19,3 +19,9 @@ inputForm.addEventListener('submit',(e)=>{
 document.addEventListener('DOMContentLoaded', init)
 
 
+function tokenize(text){
+    return text 
+                .toLowerCase()
+                .split("");
+                
+}
