@@ -23,5 +23,9 @@ function tokenize(text){
     return text 
                 .toLowerCase()
                 .split("");
-                
+
+}
+
+function deleteUselessChars(word){
+    return word.replace(/[^a-zA-Z\s]+/g, '');
 }
