@@ -1,0 +1,78 @@
+{
+  "sentiments": [
+    {
+      "id": 1,
+      "name": "Woody",
+      "email": "Woody@gmail.com",
+      "comment": "",
+      "analysis": {
+        "rate": 8,
+        "emoji": ""
+      }
+    },
+    {
+      "name": "Elvis Munene",
+      "email": "elvisgitau10@gmail.com",
+      "comment": "ssdd sexy love",
+      "analysis": {
+        "emoji": "😡",
+        "rate": 6
+      },
+      "id": 2
+    },
+    {
+      "name": "Gitau Elvis Munene",
+      "email": "elvisgitau10@gmail.com",
+      "comment": "saas aascsaac qxcwqdq",
+      "analysis": {
+        "emoji": "😡",
+        "rate": 0
+      },
+      "id": 3
+    },
+    {
+      "name": "Elvis Munene",
+      "email": "elvisgitau10@gmail.com",
+      "comment": "ssas wscc wsddw",
+      "analysis": {
+        "emoji": "😡",
+        "rate": 0
+      },
+      "id": 4
+    },
+    {
+      "name": "Gitau Elvis Munene",
+      "email": "elvisgitau10@gmail.com",
+      "comment": "i like coffee love",
+      "analysis": {},
+      "id": 5
+    },
+    {
+      "name": "Elvis Munene",
+      "email": "elvisgitau10@gmail.com",
+      "comment": "i LIKE PRODCT XXX CASFCFCA A VDASC DFAS )()(",
+      "analysis": {},
+      "id": 6
+    },
+    {
+      "name": "Elvis Munene",
+      "email": "elvisgitau10@gmail.com",
+      "comment": "XCFTCX FCDFCXW SDWDCW",
+      "analysis": {
+        "emoji": "😡",
+        "rate": 0
+      },
+      "id": 7
+    },
+    {
+      "name": "Elvis Munene",
+      "email": "elvisgitau10@gmail.com",
+      "comment": "I have a thousand",
+      "analysis": {
+        "emoji": "😡",
+        "rate": 0
+      },
+      "id": 8
+    }
+  ]
+}
