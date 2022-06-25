@@ -37,3 +37,7 @@ function rateWord(word){
     return (word in data) ? data[word]:0
 }
 
+function sum (x,y){
+    return x+y;
+}
+
