@@ -1,0 +1,10 @@
+#respond{
+    margin-top: 40px;
+}
+#comment_author,
+#email,
+#comment{
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+}
