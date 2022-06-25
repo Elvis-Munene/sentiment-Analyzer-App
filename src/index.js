@@ -41,3 +41,9 @@ function sum (x,y){
     return x+y;
 }
 
+function analyze (){
+    return tokenize()
+                .map(deleteUselessChars)
+                .map(rateWord)
+                .reduce(sum)
+}
