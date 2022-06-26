@@ -1,3 +1,4 @@
+//Senitment Analysis Functionality
 const resultsArea = document.querySelector(".results");
 const getButton = document.querySelector(".get");
 const postButton = document.querySelector(".post");
