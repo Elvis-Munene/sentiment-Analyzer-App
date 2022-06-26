@@ -36,6 +36,36 @@
         "rate": 2
       },
       "id": 4
+    },
+    {
+      "name": "Elvis Munene",
+      "email": "elvisgitau10@gmail.com",
+      "comment": "I like the products that your are offering. I would love to by one.",
+      "analysis": {
+        "emoji": "😍",
+        "rate": 5
+      },
+      "id": 5
+    },
+    {
+      "name": "Felix Mulei",
+      "email": "elvisgitau10@gmail.com",
+      "comment": "The website is slugish.",
+      "analysis": {
+        "emoji": "😡",
+        "rate": 0
+      },
+      "id": 6
+    },
+    {
+      "name": "Elvis Munene",
+      "email": "elvisgitau10@gmail.com",
+      "comment": "rrc xdcfdcf cfcfcfcf ecfcfcfcf cv878yt660\"\"\"",
+      "analysis": {
+        "emoji": "😡",
+        "rate": 0
+      },
+      "id": 7
     }
   ]
 }
