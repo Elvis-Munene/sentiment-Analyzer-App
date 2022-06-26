@@ -1,5 +1,5 @@
 *{
-    background-color: lightgray;
+    background-color: white;
     color: black;
     font-family: 'Rubik Moonrocks', cursive;
 }
@@ -13,12 +13,52 @@
     display: block;
     width: 100%;
 }
-.customer-response{
-    /* padding-left: 50vh; */
-    padding-top: 70vh;
-}
 .form-plus-image{
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.top-nav-bar{
+    text-align: center;
+    
+}
+#top-up p{
+    background-color: blue;
+    height: 40px;
+    padding-top: 20px;
+    
+}
+.nav-bar{
+    
+    padding-right: 30px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    
+}
+
+.nav-bar ul li a{
+    padding-right: 100px;
+    text-decoration: none;
+}
+.keka-logo-section img{
+    height: 150px;
+    padding-left: 90vh;
+}
+.keka-description p{
+    text-align: center;
+}
+.keka-services{
+    display: flex;
+    justify-content: space-between ;
+}
+.keka-services h3{
+    color: blue;
+    font-weight: 100;
+}
+.well-architected{
+    display: flex;
+    justify-content: space-evenly;
 }
