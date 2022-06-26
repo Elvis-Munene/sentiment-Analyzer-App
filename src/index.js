@@ -4,7 +4,7 @@ const postButton = document.querySelector(".post");
 
 const init = () => {
   const inputForm = document.querySelector("form");
-  
+
   const input = document.querySelector("textarea#comment");
   function tokenize(text) {
     return deleteUselessChars(text).toLowerCase().split(" ");
@@ -29,7 +29,7 @@ const init = () => {
     return displayResults(rater().reduce((sum, y) => (sum += y)));
   }
   function displayResults(grade) {
-    console.log(grade);
+    // console.log(grade);
     switch (grade) {
       case 0:
         resultsArea.textContent = "😡";
@@ -41,43 +41,84 @@ const init = () => {
           },
         };
       case 1:
-        console.log("");
+      case 2:
+      case 3:
+        resultsArea.textContent = "😄";
+        return {
+          analysis: {
+            emoji: "😄",
+            rate: grade,
+          },
+        };
+      case 4:
+      case 5:
+      case 6:
+        resultsArea.textContent = "😍";
+        return {
+          analysis: {
+            emoji: "😍",
+            rate: grade,
+          },
+        };
+      case 7:
+      case 8:
+      case 9:
+      case 10:
+        resultsArea.textContent = "🥰";
+        return {
+          analysis: {
+            emoji: "🥰",
+            rate: grade,
+          },
+        };
+
+    case -1:
+    case -2:
+    case -3:
+    case -4:
+    case -5:
+    case -6:
+    case -7:
+    case -8:
+    case -9:
+    case -10:
+        resultsArea.textContent="😰"
 
       default:
         return {
-            analysis: {
-
-            },
-          };
+          analysis: {},
+        };
         break;
     }
+    alert(grade);
+   
+  }
+  
+
+  //Fetch Data
+
+  const baseURl = "http://localhost:3000/sentiments";
+  function getSentiments() {
+    fetch(baseURl)
+      .then((response) => response.json())
+      .then((sentiments) => console.log(sentiments));
+  }
+  function postSentiment(data) {
+    fetch(baseURl, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((response) => response.json())
+      .then((sentiments) => console.log(sentiments));
   }
 
-
-//Fetch Data
-
-const baseURl = "http://localhost:3000/sentiments";
-function getSentiments() {
-  fetch(baseURl)
-    .then((response) => response.json())
-    .then((sentiments) => console.log(sentiments));
-}
-function postSentiment(data) {
-  fetch(baseURl, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Accept: "application/json",
-    },
-    body: JSON.stringify(data),
-  })
-    .then((response) => response.json())
-    .then((sentiments) => console.log(sentiments));
-}
-
-inputForm.addEventListener("submit", (e) => {
+  inputForm.addEventListener("submit", (e) => {
     e.preventDefault();
-    alert(analyze());
+    // alert(analyze());
     let form = new FormData(e.target);
     let data = {
       name: form.get("name"),
@@ -87,13 +128,10 @@ inputForm.addEventListener("submit", (e) => {
     };
     postSentiment(data);
   });
-// postButton.addEventListener("click", postSentiment);
-getButton.addEventListener("click", getSentiments);
+  // postButton.addEventListener("click", postSentiment);
+  getButton.addEventListener("click", getSentiments);
 };
 document.addEventListener("DOMContentLoaded", init);
-
-
-
 
 //Load the JSON data
 import data from "../index.json" assert { type: "json" };
