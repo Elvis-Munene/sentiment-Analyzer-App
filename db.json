@@ -26,6 +26,16 @@
       "comment": "abandoned",
       "analysis": {},
       "id": 3
+    },
+    {
+      "name": "Gitau Elvis Munene",
+      "email": "elvisgitau10@gmail.com",
+      "comment": "I like the services offered",
+      "analysis": {
+        "emoji": "😄",
+        "rate": 2
+      },
+      "id": 4
     }
   ]
 }
