@@ -98,7 +98,7 @@ const init = () => {
 
   //Fetch Data
 
-  const baseURl = "http://localhost:3000/sentiments";
+  const baseURl = "https://safe-journey-19911.herokuapp.com/sentiments";
   function getSentiments() {
     fetch(baseURl)
       .then((response) => response.json())
@@ -137,3 +137,10 @@ document.addEventListener("DOMContentLoaded", init);
 //Load the JSON data
 import data from "../index.json" assert { type: "json" };
 console.log(data);
+
+
+
+
+
+client.message.list()
+.then(message => console.log(`This is the latest mesaage: ${message}`).catch(console.error()))
